@@ -163,3 +163,75 @@ This project uses synthetic data only.
 It does not contain or attempt to reconstruct real PayPal or Capital One data.
 All references to PayPal and Capital One are for case study and educational illustration only.
 All trademarks and names are property of their respective owners.
+
+---
+
+## 13. Repository Files & Navigation
+
+Below is a quick guide to all the important files in this project:
+
+### 📁 **Data**
+- [`data/fraud_data.csv`](data/fraud_data.csv) – Synthetic transaction-level fraud dataset  
+- [`data/fraud_data_with_features.csv`](data/fraud_data_with_features.csv) – Dataset after Python feature engineering  
+
+### 🐍 **Python Scripts**
+- [`notebooks/fraud_detection_baseline.py`](notebooks/fraud_detection_baseline.py) – Loads data, engineers features, analyzes patterns
+
+### 🧮 **SQL Analysis**
+- [`sql/fraud_analysis.sql`](sql/fraud_analysis.sql) – Business intelligence queries for fraud analysis
+
+### 🖼 **Pipeline Diagram**
+- [`images/pipeline_diagram.txt`](images/pipeline_diagram.txt) – End-to-end fraud detection workflow diagram
+
+---
+
+## 14. Skills Demonstrated in This Project
+
+This project highlights skills expected from a Data Analyst, Fraud Analyst, or Data Scientist:
+
+- **Python**: Data loading, feature engineering, dataset exports  
+- **Pandas**: Creating new fraud detection features  
+- **SQL**: Fraud rate calculations, segmentation, grouping, filtering  
+- **Feature Engineering**: is_large_amount, is_night, device_reuse_count, risk indicators  
+- **Data Understanding**: How fraud behaves across locations, times, and devices  
+- **Reporting & Documentation**: Clear pipeline explanation and dataset structure  
+
+These are the exact abilities hiring managers look for in junior candidates.
+
+---
+
+## 15. Future Improvements
+
+Below are enhancements that can be added later:
+
+- 🔹 Add a machine learning model (Logistic Regression, Random Forest)
+- 🔹 Add ROC curve and confusion matrix visualizations
+- 🔹 Integrate the dataset into a real SQL database (PostgreSQL / SQLite)
+- 🔹 Create a Tableau dashboard showing fraud trends
+- 🔹 Add API-style real-time fraud scoring simulation
+- 🔹 Deploy a Streamlit dashboard for interactive fraud detection
+
+These improvements will evolve this into a full advanced analytics project.
+
+---
+
+## 16. Business Impact Summary
+
+This project demonstrates how companies like PayPal & Capital One can:
+
+- Reduce fraud losses  
+- Identify risky patterns (midnight transactions, reused devices, high-risk merchants)  
+- Improve fraud detection with engineered features  
+- Build automated pipelines for real-time decision-making  
+
+The methodology shown here reflects real-world fraud analytics workflows used in fintech, banking, credit card companies, and payment processors.
+
+---
+
+## 17. Contact
+
+If you'd like to see additional enhancements, dashboards, or model training:
+**GitHub:** https://github.com/billiseverythingcyber  
+
+
+
