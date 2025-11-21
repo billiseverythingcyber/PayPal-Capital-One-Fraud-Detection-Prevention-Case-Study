@@ -1,0 +1,53 @@
+-----------------------------------------------
+        FRAUD DETECTION PIPELINE OVERVIEW
+-----------------------------------------------
+
+           ┌────────────────────────┐
+           │  1. INGEST DATA        │
+           │  (CSV: fraud_data.csv) │
+           └───────────┬────────────┘
+                       │
+                       ▼
+           ┌────────────────────────┐
+           │ 2. CLEAN & PREPROCESS  │
+           │ - Fix timestamps       │
+           │ - Clean amounts        │
+           │ - Convert types        │
+           └───────────┬────────────┘
+                       │
+                       ▼
+           ┌────────────────────────┐
+           │  3. FEATURE ENGINEERING│
+           │ - is_large_amount      │
+           │ - is_night             │
+           │ - device_reuse_count   │
+           │ - international_flag   │
+           └───────────┬────────────┘
+                       │
+                       ▼
+           ┌────────────────────────┐
+           │ 4. PYTHON MODEL        │
+           │ - load data            │
+           │ - add features         │
+           │ - analyze fraud        │
+           └───────────┬────────────┘
+                       │
+                       ▼
+           ┌────────────────────────┐
+           │ 5. SQL ANALYSIS        │
+           │ - fraud by location    │
+           │ - fraud by hour        │
+           │ - fraud by amount      │
+           └───────────┬────────────┘
+                       │
+                       ▼
+           ┌────────────────────────┐
+           │ 6. INSIGHTS REPORT     │
+           │ - key findings         │
+           │ - patterns found       │
+           │ - business impact      │
+           └────────────────────────┘
+
+-----------------------------------------------
+This diagram shows the full end-to-end workflow.
+-----------------------------------------------
