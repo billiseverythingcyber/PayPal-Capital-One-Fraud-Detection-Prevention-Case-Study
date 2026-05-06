@@ -1,1 +1,82 @@
+FRAUD RESPONSE WORKFLOW
 
+Purpose:
+This workflow outlines the operational fraud response procedures simulated within the PayPal-Style Fraud Detection & Risk Intelligence project.
+
+Scenario:
+The system detects elevated fraud activity during a high-volume holiday transaction window occurring on December 24, 2025.
+
+Workflow Overview:
+
+STEP 1 — Transaction Monitoring
+Incoming transactions are monitored through fraud detection pipelines and dashboard systems.
+
+Key monitoring indicators include:
+
+- Elevated fraud labels
+- High-risk geographic activity
+- Unusual transaction spikes
+- Repeated device activity
+- Nighttime transaction anomalies
+- Large transaction amounts
+
+STEP 2 — Alert Generation
+When predefined fraud thresholds are exceeded, the system simulates operational alerts including:
+
+- Fraud spike alerts
+- Geo-risk alerts
+- Device anomaly alerts
+- KPI deviation warnings
+- Manual review escalation alerts
+
+STEP 3 — Fraud Operations Review
+Fraud analysts review flagged transactions using:
+
+- Transaction history
+- Device behavior
+- Customer activity patterns
+- Merchant concentration analysis
+- Geographic risk analysis
+
+Potential analyst actions include:
+
+- Approve transaction
+- Escalate for investigation
+- Request additional verification
+- Temporarily restrict account activity
+- Flag transaction for manual review
+
+STEP 4 — Executive Risk Visibility
+Executive dashboards provide leadership teams with visibility into:
+
+- Fraud exposure levels
+- Fraud trend escalation
+- Operational workload
+- Financial loss risk
+- Chargeback exposure
+- Seasonal fraud behavior
+
+STEP 5 — Model Evaluation & KPI Validation
+Data science and analytics teams evaluate:
+
+- Model performance
+- Recall and precision metrics
+- False positive rates
+- KPI integrity
+- Fraud classification accuracy
+- Seasonal behavior drift
+
+STEP 6 — Compliance & Audit Support
+Compliance teams review fraud events for:
+
+- Regulatory reporting readiness
+- AML risk exposure
+- Audit documentation
+- Operational accountability
+- Risk governance procedures
+
+Business Objective:
+The primary objective of the fraud response workflow is to reduce financial loss through early fraud detection, rapid escalation, and operational coordination.
+
+Strategic Principle:
+Early fraud detection and coordinated operational response reduce revenue leakage, chargeback exposure, and customer trust deterioration.
