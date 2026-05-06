@@ -1,1 +1,68 @@
+PAYPAL-STYLE FRAUD DETECTION SYSTEM ARCHITECTURE
 
+┌──────────────────────────┐
+│ 1. DATA INGESTION        │
+│ Transaction CSV Dataset  │
+└─────────────┬────────────┘
+              │
+              ▼
+┌──────────────────────────┐
+│ 2. DATA PREPROCESSING    │
+│ - Timestamp parsing      │
+│ - Missing value handling │
+│ - Data normalization     │
+└─────────────┬────────────┘
+              │
+              ▼
+┌──────────────────────────┐
+│ 3. FEATURE ENGINEERING   │
+│ - Night transaction flag │
+│ - Device frequency       │
+│ - Merchant concentration │
+│ - Geo-risk indicators    │
+└─────────────┬────────────┘
+              │
+              ▼
+┌──────────────────────────┐
+│ 4. SQL FRAUD ANALYTICS   │
+│ - Fraud hotspots         │
+│ - Device anomalies       │
+│ - Merchant analysis      │
+│ - Risk concentration     │
+└─────────────┬────────────┘
+              │
+              ▼
+┌──────────────────────────┐
+│ 5. MACHINE LEARNING      │
+│ - Logistic Regression    │
+│ - Recall analysis        │
+│ - Precision evaluation   │
+│ - ROC-AUC scoring        │
+└─────────────┬────────────┘
+              │
+              ▼
+┌──────────────────────────┐
+│ 6. KPI VALIDATION        │
+│ - Fraud label checks     │
+│ - COUNT verification     │
+│ - SUM reconciliation     │
+│ - Fraud rate validation  │
+└─────────────┬────────────┘
+              │
+              ▼
+┌──────────────────────────┐
+│ 7. TABLEAU DASHBOARD     │
+│ - KPI monitoring         │
+│ - Fraud visualization    │
+│ - Executive reporting    │
+│ - Operational visibility │
+└─────────────┬────────────┘
+              │
+              ▼
+┌──────────────────────────┐
+│ 8. FRAUD OPERATIONS      │
+│ - Alert escalation       │
+│ - Manual review          │
+│ - Risk investigations    │
+│ - Executive response     │
+└──────────────────────────┘
