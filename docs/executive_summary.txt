@@ -1,1 +1,62 @@
+EXECUTIVE SUMMARY
 
+Project Title:
+PayPal-Style Fraud Detection & Risk Intelligence Dashboard
+
+Objective:
+Develop an end-to-end fraud analytics and monitoring solution capable of identifying suspicious transaction behavior during high-risk transaction periods using machine learning, SQL analysis, feature engineering, and executive KPI visualization.
+
+Business Scenario:
+This project simulates elevated fraud activity occurring during a high-volume holiday transaction window on December 24, 2025. Increased digital payment traffic and urgency-based purchasing behavior create heightened fraud exposure for financial institutions and payment processors.
+
+Business Problem:
+Without operational fraud monitoring and predictive analytics systems, organizations face:
+
+- Chargebacks
+- Revenue leakage
+- Refund losses
+- Customer distrust
+- Operational strain
+- Regulatory exposure
+
+Solution Overview:
+The solution combines:
+
+- Python-based feature engineering
+- SQL-driven fraud pattern analysis
+- Baseline machine learning models
+- KPI validation logic
+- Tableau executive dashboards
+- Risk alert simulation
+
+Key Analytical Discovery:
+Initial dashboard analysis incorrectly displayed predicted fraud values instead of confirmed fraud labels. KPI validation procedures identified the discrepancy and corrected executive metrics.
+
+Correct validated KPIs:
+
+- Total Transactions: 150
+- Confirmed Fraud Transactions: 19
+- Confirmed Non-Fraud Transactions: 131
+- Actual Fraud Rate: 12.67%
+
+Business Value:
+The project demonstrates how fraud analytics systems support:
+
+- Executive risk visibility
+- Fraud operations monitoring
+- Financial loss prevention
+- Investigation prioritization
+- Operational escalation workflows
+- KPI integrity validation
+
+Technical Stack:
+- Python
+- Pandas
+- SQL
+- Jupyter Notebook
+- Azure Machine Learning
+- Tableau
+- GitHub
+
+Strategic Insight:
+The value of fraud intelligence systems extends beyond machine learning predictions. True enterprise value comes from validating business KPIs, supporting operational response, and translating analytical findings into executive decision-making support.
