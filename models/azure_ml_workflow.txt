@@ -1,1 +1,121 @@
+AZURE MACHINE LEARNING WORKFLOW
 
+Project:
+PayPal-Style Fraud Detection & Risk Intelligence System
+
+Purpose:
+This document outlines how Azure Machine Learning concepts were integrated into the fraud analytics workflow to simulate an enterprise fraud detection environment.
+
+Objective:
+Demonstrate how cloud-based machine learning infrastructure can support fraud detection, operational monitoring, model evaluation, and scalable analytics workflows.
+
+Azure ML Role in the Project:
+Azure Machine Learning concepts were used to support:
+
+- Fraud model experimentation
+- Dataset management
+- Model training workflows
+- Analytical scalability
+- Operational machine learning processes
+
+Workflow Overview:
+
+1. DATA INGESTION
+Transaction datasets are imported into the analytics environment for preprocessing and fraud analysis.
+
+Data includes:
+
+- Transaction IDs
+- Customer activity
+- Device identifiers
+- Geographic locations
+- Merchant information
+- Fraud labels
+
+Objective:
+Centralize transaction data for downstream analytics and modeling.
+
+2. DATA PREPROCESSING
+Raw transaction data is cleaned and standardized prior to model training.
+
+Preprocessing activities include:
+
+- Timestamp conversion
+- Missing value handling
+- Data normalization
+- Feature preparation
+
+Objective:
+Improve model reliability and analytical consistency.
+
+3. FEATURE ENGINEERING
+Additional fraud intelligence variables are generated to improve fraud detection performance.
+
+Engineered features include:
+
+- Nighttime transaction indicators
+- Large transaction flags
+- Device usage frequency
+- Merchant transaction concentration
+- Geographic risk indicators
+
+Objective:
+Strengthen predictive fraud detection capability.
+
+4. MODEL TRAINING
+Baseline machine learning models are trained using historical transaction behavior.
+
+Training workflow includes:
+
+- Train-test split
+- Model fitting
+- Prediction generation
+- Performance evaluation
+
+Objective:
+Classify high-risk transactions and support fraud investigations.
+
+5. MODEL EVALUATION
+Model performance is evaluated using fraud-focused metrics including:
+
+- Recall
+- Precision
+- F1 Score
+- ROC-AUC
+
+Objective:
+Measure fraud detection effectiveness while balancing operational workload.
+
+6. KPI VALIDATION & REPORTING
+Fraud metrics are validated against confirmed fraud labels before executive dashboard reporting.
+
+Objective:
+Ensure KPI accuracy and maintain reporting integrity.
+
+7. DASHBOARD & EXECUTIVE VISIBILITY
+Validated fraud analytics outputs are visualized using Tableau dashboards for executive and operational stakeholders.
+
+Dashboard reporting supports:
+
+- Fraud monitoring
+- Risk visibility
+- Operational escalation
+- Financial exposure analysis
+- Investigation prioritization
+
+Enterprise Simulation Objective:
+This workflow demonstrates how financial institutions may combine cloud machine learning infrastructure, analytics engineering, SQL analysis, and visualization platforms to support enterprise fraud intelligence operations.
+
+Scalability Considerations:
+A production-scale fraud environment would potentially include:
+
+- Real-time transaction streaming
+- Automated retraining pipelines
+- API-based fraud scoring
+- Alert orchestration systems
+- Cloud-based monitoring infrastructure
+- Model drift detection
+- Distributed analytics processing
+
+Strategic Insight:
+Cloud machine learning platforms provide the scalability and operational structure necessary for modern fraud detection systems to support rapid decision-making, operational monitoring, and enterprise risk management.
