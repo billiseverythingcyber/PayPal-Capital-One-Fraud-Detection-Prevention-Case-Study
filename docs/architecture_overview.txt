@@ -1,1 +1,124 @@
+ARCHITECTURE OVERVIEW
 
+Project:
+PayPal-Style Fraud Detection & Risk Intelligence System
+
+Purpose:
+This document provides a high-level overview of the fraud analytics architecture used throughout the project.
+
+System Objective:
+The system is designed to simulate how financial institutions detect, analyze, monitor, and respond to elevated fraud activity during high-risk transaction periods.
+
+Core Architecture Components:
+
+1. DATA INGESTION LAYER
+Source transaction data is imported into the analytics environment using CSV-based datasets.
+
+Data includes:
+
+- Transaction IDs
+- Customer IDs
+- Transaction amounts
+- Timestamps
+- Merchant IDs
+- Device IDs
+- Geographic locations
+- Fraud labels
+
+Primary tools:
+- Python
+- Pandas
+
+2. DATA PREPROCESSING & CLEANING
+Raw transaction data is standardized and prepared for downstream analytics.
+
+Processing steps include:
+
+- Timestamp parsing
+- Missing value handling
+- Field normalization
+- Data formatting
+- Type conversion
+
+Objective:
+Ensure data quality and analytical consistency.
+
+3. FEATURE ENGINEERING LAYER
+Additional fraud intelligence variables are generated to strengthen fraud detection capability.
+
+Engineered features include:
+
+- Transaction hour
+- Nighttime transaction flags
+- Large transaction indicators
+- Device usage frequency
+- Customer transaction frequency
+- Merchant concentration analysis
+- High-risk location indicators
+
+Objective:
+Improve anomaly detection and model interpretability.
+
+4. SQL FRAUD ANALYTICS LAYER
+SQL analysis is used to identify operational fraud patterns.
+
+Key analyses include:
+
+- High-risk merchant analysis
+- Geographic fraud concentration
+- Device anomaly detection
+- Customer transaction spikes
+- Time-of-day fraud analysis
+
+Objective:
+Support fraud investigations and operational monitoring.
+
+5. MACHINE LEARNING LAYER
+A baseline fraud detection model is used to classify high-risk transactions.
+
+Modeling workflow includes:
+
+- Train-test split
+- Logistic regression baseline
+- Recall analysis
+- Precision analysis
+- ROC-AUC evaluation
+
+Objective:
+Identify suspicious transactions while minimizing undetected fraud exposure.
+
+6. KPI VALIDATION & GOVERNANCE
+Dashboard KPIs are validated against confirmed fraud labels to ensure reporting accuracy.
+
+Validation includes:
+
+- Fraud count verification
+- Transaction total verification
+- Fraud rate calculations
+- Ground-truth reconciliation
+
+Objective:
+Prevent incorrect executive reporting and maintain dashboard integrity.
+
+7. EXECUTIVE DASHBOARD LAYER
+Tableau dashboards provide executive-level fraud intelligence visibility.
+
+Dashboard capabilities include:
+
+- Fraud KPI monitoring
+- Fraud vs non-fraud comparisons
+- Risk trend visualization
+- Operational monitoring support
+- Executive reporting summaries
+
+8. OPERATIONAL RESPONSE LAYER
+Simulated fraud operations workflows support:
+
+- Alert escalation
+- Manual review processes
+- Risk investigations
+- Compliance review
+- Executive decision support
+
+Strategic Outcome:
+The architecture demonstrates how modern fraud analytics environments combine data engineering, machine learning, SQL analytics, KPI governance, and executive reporting into a unified operational intelligence system.
