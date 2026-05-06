@@ -1,1 +1,55 @@
+KPI VALIDATION NOTES
 
+Purpose:
+This document explains the KPI validation procedures performed during fraud dashboard development.
+
+Initial Issue Identified:
+During dashboard construction, the fraud visualization initially displayed:
+
+- Total Transactions: 150
+- Fraud Transactions: 108
+- Fraud Rate: 72%
+
+These metrics were determined to be inaccurate after further validation analysis.
+
+Root Cause:
+The Tableau dashboard was incorrectly aggregating machine learning prediction outputs instead of confirmed fraud labels from the source dataset.
+
+This created inflated fraud metrics and inaccurate executive reporting values.
+
+Validation Process:
+To verify dashboard integrity, the following steps were performed:
+
+1. Reviewed source transaction dataset
+2. Used Tableau “Show Me” and validation worksheets
+3. Verified fraud label distribution
+4. Cross-checked COUNT and SUM calculations
+5. Rebuilt KPI logic using confirmed labels
+
+Validated Results:
+Confirmed fraud metrics:
+
+- Confirmed Fraud Transactions (Label = 1): 19
+- Confirmed Non-Fraud Transactions (Label = 0): 131
+- Total Transactions: 150
+- Actual Fraud Rate: 12.67%
+
+Final KPI Logic:
+- Total Transactions = COUNT(Transaction ID)
+- Confirmed Fraud Transactions = SUM(Label)
+- Fraud Rate = SUM(Label) / COUNT(Transaction ID)
+
+Business Importance:
+Accurate KPI reporting is critical in fraud analytics environments because incorrect fraud metrics can:
+
+- Trigger unnecessary operational escalations
+- Distort executive decision-making
+- Misrepresent financial risk exposure
+- Reduce trust in analytics systems
+- Create inaccurate fraud trend reporting
+
+Key Lesson Learned:
+Machine learning outputs should always be validated against ground-truth business data before being presented to executives or operational stakeholders.
+
+Strategic Insight:
+This validation process transformed the project from a simple visualization exercise into a true fraud analytics governance and KPI integrity project.
