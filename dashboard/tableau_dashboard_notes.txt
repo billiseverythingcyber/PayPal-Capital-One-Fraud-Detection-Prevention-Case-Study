@@ -1,1 +1,87 @@
+TABLEAU DASHBOARD NOTES
 
+Dashboard Title:
+PayPal-Style Fraud Detection & Risk Intelligence Dashboard
+
+Purpose:
+The Tableau dashboard was designed to provide executive-level visibility into fraud activity, KPI integrity, operational exposure, and transaction risk patterns during a simulated high-risk payment processing period.
+
+Primary Business Objective:
+Enable rapid identification of elevated fraud activity while supporting operational monitoring and executive decision-making.
+
+Dashboard Components:
+
+1. KPI SUMMARY TILES
+The dashboard includes executive KPI indicators for:
+
+- Total Transactions
+- Confirmed Fraud Transactions
+- Confirmed Non-Fraud Transactions
+- Actual Fraud Rate
+
+Purpose:
+Provide immediate visibility into fraud exposure levels and transaction health.
+
+2. FRAUD VS NON-FRAUD VISUALIZATION
+Bar chart comparison showing:
+
+- Legitimate transactions
+- Confirmed fraudulent transactions
+
+Purpose:
+Support rapid fraud distribution analysis and operational interpretation.
+
+3. EXECUTIVE INSIGHT SECTION
+The dashboard includes executive commentary summarizing:
+
+- Elevated fraud activity
+- Operational implications
+- Risk exposure
+- Fraud monitoring objectives
+
+Purpose:
+Translate analytical results into business-oriented interpretation.
+
+4. KPI VALIDATION CONTROLS
+Dashboard metrics were validated against confirmed fraud labels to ensure reporting accuracy.
+
+Validation procedures included:
+
+- COUNT verification
+- SUM verification
+- Label reconciliation
+- Fraud rate recalculation
+
+Purpose:
+Prevent inaccurate executive reporting and maintain dashboard governance integrity.
+
+5. SEASONAL FRAUD SCENARIO
+The dashboard simulates fraud monitoring during a high-risk holiday transaction period occurring on December 24, 2025.
+
+Risk conditions include:
+
+- Increased payment volume
+- Urgency-based purchasing behavior
+- Elevated fraud opportunities
+- Higher operational strain
+
+Operational Use Cases:
+The dashboard supports:
+
+- Fraud operations monitoring
+- Executive risk reporting
+- Investigation prioritization
+- Chargeback exposure monitoring
+- Financial risk visibility
+- Operational escalation workflows
+
+Technical Tools Used:
+- Tableau
+- Python
+- Pandas
+- SQL
+- Azure Machine Learning
+- Jupyter Notebook
+
+Strategic Insight:
+The dashboard demonstrates how analytics visualization platforms can transform machine learning outputs and operational transaction data into executive-level fraud intelligence systems.
