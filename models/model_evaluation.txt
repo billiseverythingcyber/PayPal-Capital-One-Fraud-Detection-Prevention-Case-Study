@@ -1,1 +1,113 @@
+MODEL EVALUATION NOTES
 
+Project:
+PayPal-Style Fraud Detection & Risk Intelligence System
+
+Purpose:
+This document summarizes the baseline machine learning model evaluation process used within the fraud detection workflow.
+
+Model Objective:
+The model was developed to identify potentially fraudulent transactions based on historical transaction behavior, engineered fraud indicators, and operational transaction patterns.
+
+Baseline Model:
+The project uses a baseline Logistic Regression model to classify fraudulent versus legitimate transactions.
+
+Reason for Model Selection:
+Logistic Regression was selected because:
+
+- It is lightweight and interpretable
+- It provides strong baseline classification performance
+- It is commonly used for binary classification problems
+- It allows clear understanding of fraud probability relationships
+
+Data Preparation:
+Prior to model training, the following preprocessing steps were completed:
+
+- Data cleaning
+- Timestamp parsing
+- Feature engineering
+- Transaction normalization
+- Fraud label validation
+
+Feature Engineering Inputs:
+Key engineered fraud indicators included:
+
+- Transaction hour
+- Nighttime transaction flags
+- Large transaction indicators
+- Device frequency usage
+- Customer transaction frequency
+- Merchant transaction concentration
+- High-risk geographic indicators
+
+Training Workflow:
+The modeling workflow included:
+
+1. Train-test split
+2. Feature selection
+3. Baseline model training
+4. Prediction generation
+5. Performance evaluation
+
+Primary Evaluation Metrics:
+
+1. RECALL
+Recall measures the model’s ability to correctly identify fraudulent transactions.
+
+Business Importance:
+In fraud detection environments, recall is highly important because undetected fraud creates direct financial losses.
+
+Priority:
+Catch as much fraud as possible.
+
+2. PRECISION
+Precision measures how many flagged transactions are actually fraudulent.
+
+Business Importance:
+Low precision creates excessive false positives and increases operational investigation workload.
+
+3. F1 SCORE
+The F1 Score balances precision and recall.
+
+Business Importance:
+Provides a combined measure of fraud detection effectiveness.
+
+4. ROC-AUC
+ROC-AUC evaluates the model’s ability to distinguish between fraudulent and legitimate transactions across multiple thresholds.
+
+Business Importance:
+Measures overall classification quality.
+
+Operational Interpretation:
+Fraud detection systems often prioritize recall over perfect precision because:
+
+- Missing fraud is costly
+- Financial losses escalate quickly
+- Fraudulent transactions can spread rapidly
+- Early intervention is critical
+
+Key Strategic Insight:
+Machine learning models alone are not sufficient for fraud prevention.
+
+Enterprise fraud environments require:
+
+- KPI validation
+- Operational monitoring
+- Human investigation workflows
+- Alert escalation systems
+- Executive reporting visibility
+
+Future Improvements:
+Potential future enhancements include:
+
+- Random Forest models
+- Gradient Boosting
+- XGBoost
+- Real-time fraud scoring
+- Graph-based fraud detection
+- Behavioral anomaly detection
+- SHAP explainability integration
+- Streaming fraud analytics
+
+Conclusion:
+The model evaluation process demonstrates how machine learning supports enterprise fraud intelligence by combining predictive analytics with operational risk management and business decision support.
