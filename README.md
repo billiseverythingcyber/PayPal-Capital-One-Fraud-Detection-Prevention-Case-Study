@@ -1,5 +1,7 @@
 # PayPal-Style Fraud Detection & Risk Intelligence System
 
+![Banner](images/github_banner.png)
+
 ## Overview
 
 This project simulates an enterprise fraud analytics and risk intelligence environment inspired by real-world financial services fraud detection workflows.
